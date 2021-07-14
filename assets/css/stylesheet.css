@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Trip Sans';
+    src: url('/assets/fonts/TripSans-Regular.eot');
+    src: url('/assets/fonts/TripSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/TripSans-Regular.woff2') format('woff2'),
+        url('/assets/fonts/TripSans-Regular.woff') format('woff'),
+        url('/assets/fonts/TripSans-Regular.ttf') format('truetype'),
+        url('/assets/fonts/TripSans-Regular.svg#TripSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato-Regular.eot');
+    src: url('/assets/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Lato-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Lato-Regular.woff') format('woff'),
+        url('/assets/fonts/Lato-Regular.ttf') format('truetype'),
+        url('./assets/fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FreightSansLF Pro';
+    src: url('./assets/fonts/FreightSansLFProMedium-Regular.eot');
+    src: url('./assets/fonts/FreightSansLFProMedium-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/FreightSansLFProMedium-Regular.woff2') format('woff2'),
+        url('./assets/fonts/FreightSansLFProMedium-Regular.woff') format('woff'),
+        url('./assets/fonts/FreightSansLFProMedium-Regular.ttf') format('truetype'),
+        url('./assets/fonts/FreightSansLFProMedium-Regular.svg#FreightSansLFProMedium-Regular') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
