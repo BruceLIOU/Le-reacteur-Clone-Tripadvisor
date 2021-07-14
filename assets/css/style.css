@@ -1,221 +1,413 @@
 /* GLOBAL RULES */
-body{
-    font-family: 'Trip Sans';
-    font-weight: normal;
-    font-style: normal;
-    background-color: #fff;
-}
-.container {
-    width: 1136px;
-    margin: 0 auto;
-}
 
-/* HEADER */
-header{
-    height: 60px;
-    position: relative;
-    margin: 20px 0;
-    color: black
-}
-header img {
-    width: 188px;
-    margin-right: 28px;
-    display: block;
-}
-nav {
-    display: flex;
-    align-items: center;
-}
-.inputSearch{
-    flex: 1 1 0;
-    opacity: 1;
-    transition: opacity .15s ease-in;
-    margin-right: 6px;
-    display: flex;
-}
-
-.formSearch{
-    
-    padding: 0 12px;
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-.inputSearch input {
-    font-size: 16px;
-    height: 38px;
-    line-height: 38px;
-    padding: 0 0 0 31px;
-    vertical-align: middle;
-    border-radius: 8px;
-    border: 1px solid grey;
-    width:250px;
-}
-.fa-search{
-    margin:13px ;
-    position: absolute;
-    color:grey
-}
-.navbar{
-    display: flex;
-    flex-direction: row;
-    width:500px;
-    padding-top: 15px;
-}
-.navbar i {
-    margin-right: 6px;
-}
-.navbar span {
-    justify-content: flex-end;
-    margin-left: 14px;
-    cursor: pointer;
-    font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 124%;
-}
-.navbar span:last-child{
-    justify-content: flex-end;
-    align-items: center;
-    color:white;
-    background-color: #000;
-    margin-top: -10px;
-    padding: 10px 16px;
-    border-radius: 20px;
-    position: relative;
-}
-
-/* MAIN */
-h1 span {
-    margin-bottom: 16px;
-    font-size: 54px;
-    line-height: 120%;
-    font-weight:bold;
-    letter-spacing: .02em;
-    font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
-    font-style: normal;
-}
-h1 .explore{
-    margin-bottom: 16px;
-    color: #FF5D5D
-}
-.navigation{
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-.navSite span{
-    color: black;
+body {
     background-color: white;
-    border: 1px solid black;
-    border-radius: 12px;
+    font-family: "Trip Sans Reg";
+  }
+  
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-family: "Trip Sans MEd";
+    font-weight: bold;
+  }
+  
+  h1 span {
+    color: #FF5D5D;
+    
+  }
+  
+  /* HEADER */
+  
+  header {
+    height: 60px;
+    background-color: white;
+  }
+  
+  header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header img {
+    width: 188px;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav div {
+    margin-right: 20px;
+  }
+  
+  header nav i {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+  
+  header button {
+    font-family: inherit;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
     cursor: pointer;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    min-width: 150px;
-    overflow: hidden;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    border-radius: 20px;
+  }
+  
+  header button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* MAIN */
+  
+  main {
+    padding-top: 60px;
+  }
+  
+  /* Menu */
+  .menu {
+    margin: 40px 0;
     display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    text-align: left;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
+  }
+  
+  .menu > div {
+    border: black solid 1px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
     justify-content: space-between;
-    gap: 12px;
-    padding: 10px 16px 12px;
-    position: relative;
-    transition: background-color .2s,color .2s;
-}
-.navSite i{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-}
-.contain-img{
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    transition: opacity .1s linear;
-    transform: translateZ(0);
-    min-width: 226px;
-    width: 100%;
+    border-radius: 20px;
+
+    font-weight: 700;
+  }
+  
+  .menu > div:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  /* Pictures */
+  
+  .pictures {
     height: 430px;
-}
-.contain-img-left{
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    margin-bottom: 20px;
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-    height: 100%;
-}
-.contain-img-right{
-    margin-left: 2px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex: 1;
-    -ms-flex: 1;
+  }
+  
+  .pictures .col-1 {
     flex: 1;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
-    height: 100%;
-}
-.contain-img-right img{
-    height: 50%;
+    margin-right: 2px;
+  }
+  
+  .pictures .col-1 img {
     width: 100%;
-}
-.bottomImage{
-    margin: 20px 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .pictures .col-2 {
+    width: 480px;
+    height: 100%;
+  }
+  
+  .pictures .col-2 img {
+    height: calc(50% - 1.5px);
+    width: 100%;
+    /* display: block; */
+    object-fit: cover;
+  }
+
+  .bottomImage{
     font-size: 12px;
-    color: #333333;
+    margin-bottom: 20px;
 }
-.bottomImage span:first-child{
-    float: left;
-}
-.bottomImage span:last-child{
-    float: right;
-}
-.description{
-    display:flex;
-    margin-bottom: 54px;
-}
-.left{
-    justify-content: flex-start;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+.bottomImage span{
     display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
+    justify-content: flex-end;
+    float: right;
+    
+}
+
+.description{
+   display: flex;
+   margin-bottom: 30px;
+}
+
+.description .desc-col-1{
+    flex: 1.4;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.description .desc-col-1 h2{
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom:20px;
+}
+
+.description .desc-col-1 p{
+    font-family: initial;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+}
+
+.description .desc-col-2{
+    display: flex;
+}
+
+.description .desc-col-2{
+    flex: 1;
+    justify-content: flex-end;
+    width: 480px;
     flex-direction: column;
+    position: relative;
 }
-.right{
-    border-radius: 12px;
-    padding: 20px
-}
-.descriptionRight{
+.description .desc-col-2 .desc-top{
     background-color: #FF5D5D;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+}
+.description .desc-col-2 .desc-top h2{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.description .desc-col-2 .desc-top p{
+
+    margin-bottom: 20px;
+}
+
+.description button {
+    font-family: inherit;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 16px;
+    height:50px;
+  }
+
+  .description .desc-bottom{
+      flex: 3;
+  }
+
+  .description .desc-bottom img{
+    width: 465px;
+    height: 252px;
+    border-radius: 0 0 20px 20px;
+    object-fit: cover;
+}
+
+/* Sections */
+section{
+    font-family: "Trip sans Reg";
+    
+}
+
+section h2 {
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+section > div:not(:first-child){
+    display: flex;
+}
+section .row{
+    width: 100%;
+    display: flex;;
+}
+section .col-1{
+    width: 25%;
+}
+section .col-1 span {
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 700;
+}
+section .col-1 a {
+    text-decoration: none;
+    color: #545454;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: bold;
+}
+section .col-1 p {
+    margin: 20px 0 20px 0;
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: normal;
+}
+section .pictures{
+    display: flex;
+    width: 74%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.col-img-1{
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/arenes-de-nimes.jpg);
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.col-img-2{
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/jardins-de-la-fontaine.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    margin-right: 12px;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.col-img-3{
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/musee-de-la-romanite.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.circle-heart {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 20px 0 0 220px;
+  }
+  .pictures i{
+    margin: 12px;
+  }
+  .pictures .name{
+    position: absolute;
+    margin-top: 310px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .col-img-4{
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/maison-cocteau-bathroom.jpg);
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.col-img-5{
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/chambre-double.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    margin-right: 12px;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.col-img-6{
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/hotel-des-tuileries.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.col-img-7{
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/photo0jpg.jpg);
+    background-repeat: no-repeat;
+    margin-right: 12px;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.col-img-8{
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/manger-et-discuter.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    margin-right: 12px;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+.col-img-9{
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-image: url(../img/la-terrasse.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:space-between;
+    object-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+footer {
+    background-color: #FAF1ED;
+    line-height: 150px;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    display: flex;
+    width: 40px;
+    margin-right: 20px;
 }
