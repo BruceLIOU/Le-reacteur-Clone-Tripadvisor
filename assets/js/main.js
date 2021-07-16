@@ -82,7 +82,7 @@ $.addEventListener("DOMContentLoaded", () => {
       };
       //réponse du serveur
       const response = await axios.post(
-        "https://formulaire-backend-tripadvisor.herokuapp.com/",
+        "https://clone-backend-tripadvisor.herokuapp.com/",
         data
       );
       console.log(response);
