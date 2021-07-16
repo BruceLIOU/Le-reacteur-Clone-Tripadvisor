@@ -80,7 +80,7 @@ h4 {
 #error {
   text-align: center;
   margin: 0 auto;
-  color: white;
+  color: rgb(250, 8, 8);
   font-size: 13px;
 }
 body {
