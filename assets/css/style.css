@@ -688,6 +688,8 @@ color: var(--black);
 #modalSuccess h4 {
   color: black;
   margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 #modal form {
   display: flex;
