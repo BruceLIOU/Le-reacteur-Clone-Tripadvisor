@@ -45,7 +45,7 @@ $.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Scoll navigation on click btn
+  // Scroll navigation on click btn
   $.querySelector(".btnCarRight").addEventListener("click", () => {
     $.querySelector(".navigation").scrollLeft += 200;
   });
@@ -56,7 +56,7 @@ $.addEventListener("DOMContentLoaded", () => {
   let isLoading = false;
   //Ecoute de la soumission du formulaire d'envoie d'emails
   $.querySelector("#formEmail").addEventListener("submit", async (event) => {
-    //Anule l'effet par défaut du submit
+    //Annule l'effet par défaut du submit
     event.preventDefault();
     if (
       firstname.value &&
